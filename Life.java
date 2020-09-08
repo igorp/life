@@ -1,4 +1,4 @@
-//Game of Life implementation by Igor P.
+// Game of Life implementation by Igor P.
 public class Life {
 
     static int SIZE = 10;
@@ -9,7 +9,7 @@ public class Life {
 
         boolean[][] originalGrid = new boolean[SIZE][SIZE];
 
-        //set the first generation shape
+        // set the first generation shape
         grid[4][5] = true;
         grid[5][4] = true;
         grid[5][5] = true;
@@ -33,7 +33,7 @@ public class Life {
     static boolean nextState(int i, int j, boolean[][] grid) {
         int neighbours = 0;
 
-        //check perpendicular cells
+        // check perpendicular cells
         if (i + 1 < SIZE && grid[i + 1][j]) {
             neighbours++;
         }
@@ -47,7 +47,7 @@ public class Life {
             neighbours++;
         }
 
-        //check diagonal cells
+        // check diagonal cells
         if (i + 1 < SIZE && j + 1 < SIZE && grid[i + 1][j + 1]) {
             neighbours++;
         }
@@ -61,6 +61,7 @@ public class Life {
             neighbours++;
         }
 
+        // count neighbours
         if (grid[i][j] && neighbours < 2) {
             return false;
         }
@@ -89,7 +90,7 @@ public class Life {
         }
     }
 
-    //copy array from a to b
+    // copy array from a to b
     static void copyArray(boolean[][] a, boolean[][] b) {
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {
