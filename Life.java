@@ -1,4 +1,5 @@
 // Game of Life implementation by Igor P.
+
 public class Life {
 
     static int SIZE = 10;
