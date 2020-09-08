@@ -18,6 +18,7 @@ public class Life {
         grid[5][6] = true;
         grid[6][5] = true;
 
+        // the main loop of the game
         for (int n = 0; n < ITERATIONS; n++) {
             printGrid();
             copyArray(grid, originalGrid);
