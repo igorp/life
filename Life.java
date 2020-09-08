@@ -8,6 +8,7 @@ public class Life {
 
     public static void main(String args[]) throws InterruptedException {
 
+        // initialize the grid
         boolean[][] originalGrid = new boolean[SIZE][SIZE];
 
         // set the first generation shape
@@ -79,6 +80,7 @@ public class Life {
         return false;
     }
 
+    // display the grid in console
     static void printGrid() {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
