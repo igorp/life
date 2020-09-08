@@ -31,6 +31,7 @@ public class Life {
         }
     }
 
+    // updates the grid to the next generation
     static boolean nextState(int i, int j, boolean[][] grid) {
         int neighbours = 0;
 
