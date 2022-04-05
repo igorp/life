@@ -1,7 +1,7 @@
 Game of Life
 ====
 
-Conway's Game of Life is a cellular automaton created by John Conway in 1970. Basically it's a kind of a simulation of how a grid of squares evolves and changes with time. Each square on the grid changes its state from dead to alive depending on the previous state. Here are the rules:
+Conway's Game of Life is a cellular automaton created by John Conway in 1970. Basically it's a kind of a simulation of how a grid of squares evolves and changes with time. Each square on the grid changes its state from dead to alive or vice versa depending on the previous state. Here are the rules:
 
 1. Any live cell with fewer than two live neighbours dies, as if caused by under-population.
 2. Any live cell with two or three live neighbours lives on to the next generation.
