@@ -9,6 +9,6 @@ depending on the previous state. Here are the rules:
 3. Any live cell with more than three live neighbours dies, as if by overcrowding.
 4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
-As for the implementation itself, there is a two-dimensional array of Booleans in which the cells are stored as either dead or alive. Then we loop as many times as we want checking the next state. It is important to first make a copy of the original grid and not directly changing the grid, because this will mess up everything. Finally you must not forget to set the initial state, so that there is something to begin with.
+As for the implementation itself, there is a two-dimensional array of Booleans in which the cells are stored as either dead or alive. Then we loop as many times as we want checking the next state. It is important to first make a copy of the original grid and not directly change the grid, because this will mess everything up. Finally you must not forget to set the initial state, so that there is something to begin with.
 
 For more information on the subject check out the wikipedia article: http://en.wikipedia.org/wiki/Conway's_Game_of_Life
